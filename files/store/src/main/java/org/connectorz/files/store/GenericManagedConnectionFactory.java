@@ -42,7 +42,7 @@ public class GenericManagedConnectionFactory
         out.println("#GenericManagedConnectionFactory.constructor");
     }
 
-    @Min(1)
+    //@Min(1)
     @ConfigProperty(defaultValue = "./store/", supportsDynamicUpdates = true, description = "The root folder of the file store")
     public void setRootDirectory(String rootDirectory) {
         out.println("#FileBucket.setRootDirectory: " + rootDirectory);
